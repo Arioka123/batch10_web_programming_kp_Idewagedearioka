@@ -1,0 +1,18 @@
+Belajar Mengenai :
+1) pengenalan HTML
+2) pengenalan Tag HTML
+  -menebalkan text
+  -memiringkan huruf
+  -membuat list
+3) Mengenal shortcut
+  alt + z -> wrap taxt untuk menyesuaikan ukuran koding dengan layar 
+  ctrl + shift + l -> untuk blok semua kode dalam 1 baris
+4) Belajar membuat Form  di html yang terdiri dari
+  -membuat div
+  -membuat form dengan tag form
+  -membuat gambar
+  -membuat heading
+  -membuat link
+  -membuat list
+  -membuat list bersarang
+  -membuat tabel
