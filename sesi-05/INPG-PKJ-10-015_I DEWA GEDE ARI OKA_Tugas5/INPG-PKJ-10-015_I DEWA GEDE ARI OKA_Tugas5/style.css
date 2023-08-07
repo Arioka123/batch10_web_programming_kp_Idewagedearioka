@@ -1,0 +1,52 @@
+button {
+  color: rgb(248, 248, 248);
+  padding-left: 45px;
+  padding-top: 8px;
+  padding-right: 45px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgb(24, 47, 175);
+  border: 2px solid #687edf;
+  border-radius: 8px;
+  position: absolute;
+  left: 75%;
+}
+
+input[type='text'],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin-left: 58px;
+  margin-top: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type='number'] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  margin-left: 2%;
+}
+
+.center {
+  margin: auto;
+  width: 90%;
+  border: 3px solid rgb(145, 252, 220);
+  padding-bottom: 50px;
+  margin-top: 30px;
+}

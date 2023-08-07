@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Dewa Gede Ari Oka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="center">
+    <label>Pesan </label><input id="inputText" type="text" /><br />
+    <label>Berapa Kali </label><input id="loopCount" type="number" /><br />
+    <button onclick="loopText()">Cetak!</button>
+    <ol id="outputText"></ol>
+
+    <script>
+      function loopText() {
+        const inputText = document.getElementById('inputText').value;
+        const loopCount = parseInt(document.getElementById('loopCount').value);
+        let outputText = '';
+
+        for (let i = 0; i < loopCount; i++) {
+          outputText += i + 1 + '. ' + inputText + '<br>';
+        }
+
+        document.getElementById('outputText').innerHTML = outputText;
+      }
+    </script>
+  </body>
+</html>

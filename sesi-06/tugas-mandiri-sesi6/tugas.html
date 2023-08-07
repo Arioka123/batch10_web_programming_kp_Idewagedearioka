@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tulisan Kedip manjdha</h1>
+
+    <p class="changingText" id="text1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, architecto earum nisi quas debitis corrupti dolores sint? Aperiam explicabo, ad voluptatum non odit provident, optio ex labore quo ab enim.
+    </p>
+    <p class="changingText" id="text2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, architecto earum nisi quas debitis corrupti dolores sint? Aperiam explicabo, ad voluptatum non odit provident, optio ex labore quo ab enim.
+    </p>
+    <p class="changingText" id="text3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, architecto earum nisi quas debitis corrupti dolores sint? Aperiam explicabo, ad voluptatum non odit provident, optio ex labore quo ab enim.
+    </p>
+
+    <script>
+      function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      function changeTextColor(elementId) {
+        const textElement = document.getElementById(elementId);
+        const currentColor = window.getComputedStyle(textElement).getPropertyValue('color');
+        const newColor = getRandomColor();
+
+        if (currentColor === newColor) {
+          return changeTextColor(elementId);
+        }
+        textElement.style.color = newColor;
+      }
+
+      setInterval(() => changeTextColor('text1'), 1000);
+      setInterval(() => changeTextColor('text2'), 1000);
+      setInterval(() => changeTextColor('text3'), 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>I Dewa Gede Ari Oka</title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+      p {
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tugas Mandiri 06</h1>
+    <h2>Membuat Interval dan Time Out Dengan JS dan DOM</h2>
+    <hr />
+    <p id="paragraph-1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus molestie enim. Nunc luctus ornare purus, ut aliquet odio dapibus a. Pellentesque euismod semper justo, id blandit eros efficitur in. In laoreet dignissim
+      posuere.
+    </p>
+    <p id="paragraph-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus molestie enim. Nunc luctus ornare purus, ut aliquet odio dapibus a. Pellentesque euismod semper justo, id blandit eros efficitur in. In laoreet dignissim
+      posuere.
+    </p>
+    <p id="paragraph-3">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus molestie enim. Nunc luctus ornare purus, ut aliquet odio dapibus a. Pellentesque euismod semper justo, id blandit eros efficitur in. In laoreet dignissim
+      posuere.
+    </p>
+
+    <script>
+      let isRed = false;
+      let isGreen = false;
+      let isBlue = false;
+
+      setInterval(() => {
+        const p1 = document.getElementById('paragraph-1');
+        const p2 = document.getElementById('paragraph-2');
+        const p3 = document.getElementById('paragraph-3');
+
+        p1.style.color = isRed ? 'black' : 'red';
+        p2.style.color = isGreen ? 'black' : 'green';
+        p3.style.color = isBlue ? 'black' : 'blue';
+
+        isRed = !isRed;
+        isGreen = !isGreen;
+        isBlue = !isBlue;
+      }, 1000);
+
+      setTimeout(function () {
+        document.body.style.backgroundColor = '#fafafa';
+        const h1 = document.querySelector('h1');
+        h1.style.color = 'green';
+      }, 6000);
+    </script>
+  </body>
+</html>
